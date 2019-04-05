@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fontName" format="string" />
+
+    <declare-styleable name="CTextView">
+        <attr name="fontName" />
+        <attr name="isUnderline" format="boolean" />
+        <attr name="underlineWidth" format="dimension" />
+        <attr name="underlineColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CButton">
+        <attr name="fontName" />
+    </declare-styleable>
+
+    <declare-styleable name="CRadioButton">
+        <attr name="fontName" />
+    </declare-styleable>
+
+    <declare-styleable name="CCheckBox">
+        <attr name="fontName" />
+    </declare-styleable>
+
+    <declare-styleable name="CEditText">
+        <attr name="fontName" />
+    </declare-styleable>
+
+    <declare-styleable name="CAutoCompleteTextView">
+        <attr name="fontName" />
+    </declare-styleable>
+    <declare-styleable name="CCheckedTextView">
+        <attr name="fontName" />
+    </declare-styleable>
+
+</resources>

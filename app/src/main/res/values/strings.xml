@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Campaign</string>
+    <string name="party_title">கொங்குநாடு மக்கள்\nதேசிய கட்சி</string>
+    <string name="submit">சமர்பிக்கவும்</string>
+    <string name="edt_hint">தொலைபேசி</string>
+    <string name="number">+91 %s</string>
+    <string name="app_name_with_index">KMDK CM (%1$d/%2$d)</string>
+    <string name="dialog_title_mobile">பின்வரும் எண்ணை சரிபார்க்கவும்</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jsons" />
+    <string name="action_settings">Settings</string>
+    <string name="image_details_header">Details:</string>
+    <string name="image_preview_header">Preview:</string>
+    <string name="loading_message">Uploading image. Please wait.</string>
+    <string name="dialog_select_prompt">Choose a picture</string>
+    <string name="dialog_select_camera">Camera</string>
+    <string name="dialog_select_gallery">Gallery</string>
+    <string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b375</color>
+    <color name="colorPrimaryDark">#029358</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background">#ebf2ef</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="grey">#e9e8e1</color>
+    <color name="greys">#81807e</color>
+    <color name="backs">#e2e2e2</color>
+    <color name="text_yellow">#fdf249</color>
+    <color name="text_red">@color/red_normal</color>
+    <color name="red_normal">#ec2828</color>
+    <color name="red_pressed">#c21b1b</color>
+    <color name="round_rect_color">#b6dac8</color>
+    <color name="normal_red">#FFC74646</color>
+
+    <color name="tab_unchecked">#9effffff</color>
+    <color name="item_selector">#efe98e</color>
+
+    <color name="btn_not_enabled">#CCC</color>
+</resources>

@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/lines"
+
+        android:padding="3dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="4dp"
+                android:textSize="18dp"
+                android:id="@+id/vName"
+                android:textStyle="bold"
+                android:text="hello"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="3dp"
+                android:textSize="17dp"
+                android:id="@+id/vId"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/grey"
+            />
+         <LinearLayout
+             android:padding="3dp"
+             android:background="@drawable/line"
+             android:weightSum="1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_marginLeft="3dp"
+                 android:layout_marginRight="3dp"
+                  android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content">
+                 <LinearLayout
+                     android:weightSum="2"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <LinearLayout
+                         android:layout_weight="1"
+                         android:padding="2dp"
+                         android:orientation="vertical"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content">
+                         <TextView
+                             android:layout_weight="1"
+                             android:textSize="14sp"
+                             android:textColor="@color/black"
+                             android:text="Father/ "
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+                         <TextView
+                             android:textSize="14sp"
+                             android:textColor="@color/black"
+                             android:text="Husband name :"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                     <TextView
+                         android:layout_weight="1"
+                         android:layout_gravity="bottom"
+                         android:textSize="16sp"
+                         android:text="helo"
+                         android:textColor="@color/black"
+                         android:gravity="center|start"
+                         android:textStyle="bold"
+                         android:id="@+id/vHusbend"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/ageVisible"
+                     android:padding="2dp"
+                     android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <TextView
+                             android:layout_weight="1"
+                             android:textSize="16sp"
+                             android:textColor="@color/black"
+                             android:text="Age "
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content" />
+                         <TextView
+                             android:layout_weight="1"
+                             android:textSize="16sp"
+                             android:text="helo"
+                             android:gravity="center|start"
+                             android:textStyle="bold"
+                             android:textColor="@color/black"
+                             android:id="@+id/vAge"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/sexVisible"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+                         android:textColor="@color/black"
+                         android:text="Sex "
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+                         android:text="helo"
+                         android:gravity="center|start"
+                         android:textStyle="bold"
+                         android:textColor="@color/black"
+                         android:id="@+id/vSex"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+
+
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:visibility="gone"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+
+                         android:textColor="@color/black"
+                         android:text="Affilation From "
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+                         android:textStyle="bold"
+                         android:text="helo"
+                         android:gravity="center|start"
+                         android:textColor="@color/black"
+                         android:id="@+id/vAfialationfrom"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+
+
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:id="@+id/toVisibile"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+
+                         android:textColor="@color/black"
+                         android:text="Affilation To"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+                         android:text="helo"
+                         android:gravity="center|start"
+                         android:textStyle="bold"
+                         android:textColor="@color/black"
+
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+
+                     android:id="@+id/streetVisible"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+
+                         android:textColor="@color/black"
+                         android:text="Street "
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16sp"
+                         android:textStyle="bold"
+                         android:text="helo"
+                         android:gravity="center|start"
+                         android:textColor="@color/black"
+                         android:id="@+id/vStreet"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content" />
+
+
+
+                 </LinearLayout>
+             </LinearLayout>
+
+
+
+
+
+         </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:layout_margin="1dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardBackgroundColor="@color/greys"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp">
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Caste"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                    <LinearLayout
+                        android:id="@+id/casteVisible"
+                        android:background="@drawable/line"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp">
+                        <TextView
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/vCaste"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_margin="1dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardBackgroundColor="@color/greys"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp">
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+                    <LinearLayout
+
+                        android:id="@+id/fromVisible"
+                        android:background="@drawable/line"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp">
+                        <TextView
+                            android:text="Affialation"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:textColor="@color/normal_red"
+                            android:id="@+id/vAfialationTo"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_margin="1dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardBackgroundColor="@color/greys"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp">
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Education"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:background="@drawable/line"
+                        android:id="@+id/educationVisible"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp">
+                        <TextView
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/vEducation"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_margin="1dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardBackgroundColor="@color/greys"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp">
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </android.support.v7.widget.CardView>
+                    <LinearLayout
+                        android:background="@drawable/line"
+                        android:id="@+id/mobileVisible"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp">
+                        <TextView
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/vMobile"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/vImage"
+                android:layout_weight="0.2"
+                android:scaleType="fitXY"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginBottom="3dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Mobile Number"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="40dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_settings_phone_white_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Education"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="40dp"
+                    android:id="@+id/updateEducation"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/white"
+                        android:background="@drawable/ic_books_stack_of_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Affialation"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/updateAffilation"
+                    android:layout_width="40dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/white"
+                        android:background="@drawable/ic_network"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Caste"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="40dp"
+                    android:id="@+id/updateCaste"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+
+                        android:backgroundTint="@color/white"
+                        android:background="@drawable/ic_cast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/vAffialation"
+                android:padding="2dp"
+                android:layout_alignParentRight="true"
+                android:textSize="17sp"
+                android:textColor="@color/red_pressed"
+                android:textStyle="bold"
+                android:text="Update All"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
