@@ -328,7 +328,34 @@ public class ViewVoters extends Fragment implements CityModel,SwipeRefreshLayout
 
             CityList ci= cityLists.get(i);
             viewHoler.name.setText(ci.getName().trim());
-            viewHoler.husband.setText(ci.getFathername().trim());
+            if ( ci.getFathername() .contains("தந்தை பெயர்") )
+            {
+
+                viewHoler.husband.setText(ci.getFathername().replace("தந்தை பெயர் ","").trim());
+                viewHoler.nameTexts.setText("தந்தை பெயர்");
+            }
+            else if (ci.getFathername().contains("தாய் பெயர்"))
+            {
+                viewHoler.husband.setText(ci.getFathername().replace("தாய் பெயர்","").trim());
+                viewHoler.nameTexts.setText("தாய் பெயர்");
+            }
+            else if (ci.getFathername().contains("கணவர் பெயர்"))
+            {
+
+                viewHoler.husband.setText(ci.getFathername().replace("கணவர் பெயர்","").trim());
+                viewHoler.nameTexts.setText("கணவர் பெயர்");
+            }
+            else if (ci.getFathername().contains("இதார் பெயர்"))
+            {
+                viewHoler.husband.setText(ci.getFathername().replace("இதார் பெயர்","").trim());
+                viewHoler.nameTexts.setText("இதார் பெயர்");
+            }
+            else
+            {
+                viewHoler.husband.setText(ci.getFathername().replace("பெயர்","").trim());
+                viewHoler.nameTexts.setText("Father/Husband name");
+            }
+            //viewHoler.husband.setText(ci.getFathername().trim());
             Glide.with(getActivity()).load(APIUrl.Api + "Uploads/CitizenRegister/"+
             ci.getImage()).into(viewHoler.imageView);
             viewHoler.vid.setText(ci.getId());
@@ -491,7 +518,10 @@ public class ViewVoters extends Fragment implements CityModel,SwipeRefreshLayout
             return cityLists.size();
         }
     }
-    class ViewHoler extends RecyclerView.ViewHolder {
+    class ViewHoler extends RecyclerView.ViewHolder
+    {
+       @BindView(R.id.fatheText)
+         TextView nameTexts;
         @BindView(R.id.vName)
         TextView name;
         @BindView(R.id.vHusbend)

@@ -31,11 +31,8 @@ public class CityPresent {
         this.cityModel = cityModel;
         this.context = context;
     }
-
-
     void getList(String id)
     {
-
         cityModel.showProgress();
         JsonObject jsonObject = new JsonObject()    ;
         jsonObject.addProperty("Booth_Id",id);
@@ -60,7 +57,6 @@ public class CityPresent {
                     String from ="",to ="";
                     for (int i=0;i<citizenResponses.size();i++)
                     {
-
                         CitizenResponse res= citizenResponses.get(i);
                         if (res.getAffiliated_To() != null)
                         {
@@ -78,20 +74,22 @@ public class CityPresent {
                         {
                             from     ="";
                         }
-
-
-                        cityLists.add(new CityList(res.getVoterIdNumber(),res.getCandidateName(),null, res.getImage().getFilename()
-                                ,res.getCandidateAge(),res.getALL_DATA(),res.getFatherName(),res.get_id(),
-                                res.getStreet(),res.getCaste(),res.getMobile_Number(),from,
-                                to,res.getEducational_Qualification(),res.getCandidateSex()
-                                ));
+                        if (res.getImage() != null)
+                        {
+                            cityLists.add(new CityList(res.getVoterIdNumber(),res.getCandidateName(),null, res.getImage().getFilename()
+                                    ,res.getCandidateAge(),res.getALL_DATA(),res.getFatherName(),res.get_id(),
+                                    res.getStreet(),res.getCaste(),res.getMobile_Number(),from,
+                                    to,res.getEducational_Qualification(),res.getCandidateSex()
+                            ));
+                        }
                     }
                     cityModel.showList(cityLists);
                 }
                 cityModel.hideProgress();
             }
             @Override
-            public void onError(Throwable e) {
+            public void onError(Throwable e)
+            {
                 cityModel.hideProgress();
                 Log.i("Tag","ComplaintsError"+ e.toString());
                  cityModel.showToast("Something went wrong..!");
