@@ -130,22 +130,23 @@ public class ViewVoters extends Fragment implements CityModel,SwipeRefreshLayout
         final LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-
+//        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+//            @Override
+//            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+//                super.onScrolled(recyclerView, dx, dy);
+//                mSwipeRefreshLayout.setEnabled(layoutManager.findFirstCompletelyVisibleItemPosition() == 0); // 0 is for first item position
+//            }
+//        });
             recyclerView.setAdapter(new Adapter(listDB.getAllDatas(id)));
             recyclerView.setVisibility(View.VISIBLE);
-
-
-
         // affilatiomPresent = new affilatiomPresent(getActivity(),this);
        // cityPresent.getList();
         affilationDB = new AffilationDB(getActivity());
         mSwipeRefreshLayout.setOnRefreshListener(this);
-
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary,
                 android.R.color.holo_green_dark,
                 android.R.color.holo_orange_dark,
                 android.R.color.holo_blue_dark);
-
         getActivity().invalidateOptionsMenu();
         setHasOptionsMenu(true);
     }
